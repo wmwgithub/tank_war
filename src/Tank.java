@@ -3,7 +3,7 @@ import java.awt.*;
 public class Tank {
     private int x,y;
     private Dir dir = Dir.DOWN;
-    private static  final int SPEED = 10;
+    private static  final int SPEED = 5;
     private boolean moving = false;
 
     public boolean isMoving() {
@@ -30,10 +30,9 @@ public class Tank {
     }
 
     public void paint(Graphics g) {
-        move();
         g.fillRect(x, y, 50, 50);
-
         System.out.println("x_" + x + "y_" + y);
+        move();
     }
 
     private void move() {
