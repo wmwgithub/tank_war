@@ -18,6 +18,15 @@ public class Bullet {
         g.setColor(c);
         move();
     }
+
+    public Dir getDir() {
+        return dir;
+    }
+
+    public void setDir(Dir dir) {
+        this.dir = dir;
+    }
+
     private void move() {
         switch (dir) {
             case LEFT:
